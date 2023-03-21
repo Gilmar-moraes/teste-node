@@ -26,3 +26,5 @@ Ultimo passo seria sincronizar as tabelas no banco de dados propriamente dito
     yarn dev
 ```
 
+PARA MAIS DETALHES ACESSE A [**DOCUMENTAÇÃO OFICIAL DO SEQUELIZE MIGRATIONS**](https://sequelize.org/docs/v6/other-topics/migrations/)
+
