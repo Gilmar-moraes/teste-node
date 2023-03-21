@@ -5,7 +5,8 @@
   "author": "Gilmar",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon index.js"
+    "dev": "NODE_ENV=development nodemon index.js",
+    "migrate": "npx sequelize-cli db:migrate"
   },
   "dependencies": {
     "body-parser": "^1.20.2",

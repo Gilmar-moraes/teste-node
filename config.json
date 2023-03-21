@@ -1,11 +1,9 @@
 {
-    "sequlize_cli":{
-        "development":{
-            "username":"root",
-            "password":"root",
-            "database":"teste-node",
-            "host":"localhost",
-            "dialect":"mysql"
-        }
+    "development":{
+        "username":"root",
+        "password":"root",
+        "database":"teste-node",
+        "host":"localhost",
+        "dialect":"mysql"
     }
 }
