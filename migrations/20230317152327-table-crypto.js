@@ -8,7 +8,12 @@ module.exports = {
      *
      * Example:*/
      await queryInterface.createTable('crypto', { 
-      id: Sequelize.INTEGER,
+      id: {
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+        allowNull: false
+      },
       nome: Sequelize.STRING,
       valor: Sequelize.DOUBLE,
       data: Sequelize.DATE

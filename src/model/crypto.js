@@ -29,10 +29,19 @@ Crypto.init({
     data:{
         type: DataTypes.DATE, 
         allowNull: false
+    },
+    createdAt: {
+        type: Date,
+        allowNull: false
+    },
+    updatedAt: {
+        type: Date,
+        allowNull: false
     }
 },{
     sequelize,
-    modelName:'Crypto'
+    modelName:'crypto',
+    freezeTableName: true
 })
 
 module.exports = Crypto

@@ -1,22 +1,34 @@
 const Crypto = require("../model/crypto");
 
 const create = async (crypto) => {
-    await Crypto.create(crypto)
-    return crypto
+    try {
+        await Crypto.create(crypto)
+        return crypto
+    } catch(err) {
+        console.error(err)
+    }
 }
 
 const list = async () => {
-    const cryptos = await Crypto.findAll()
-    return cryptos
+    try {
+        const cryptos = await Crypto.findAll()
+        return cryptos
+    } catch(err) {
+        console.error(err)
+    }
 }
 
 const listFiltro = async () => {
-    const cryptos = await Crypto.findAll({
-        where:{
-            valor:{$gte:100}
-        }
-    })
-    return cryptos
+    try {
+        const cryptos = await Crypto.findAll({
+            where:{
+                valor:{$gte:100}
+            }
+        })
+        return cryptos
+    } catch(err) {
+        console.error(err)
+    }
 }
 
 module.exports = {create, list, listFiltro}
